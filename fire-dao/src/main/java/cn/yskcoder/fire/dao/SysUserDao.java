@@ -1,6 +1,6 @@
-package com.kn.fire.dao;
+package cn.yskcoder.fire.dao;
 
-import com.kn.fire.model.SysUser;
+import cn.yskcoder.fire.model.SysUser;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

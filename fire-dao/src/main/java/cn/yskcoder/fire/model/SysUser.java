@@ -1,4 +1,4 @@
-package com.kn.fire.model;
+package cn.yskcoder.fire.model;
 
 import java.time.LocalDateTime;
 import javax.persistence.*;

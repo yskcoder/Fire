@@ -11,10 +11,9 @@ import java.sql.SQLException;
  * 数据库数据源配置
  *
  * @author:       yskcoder
- * @createDate:   2019/12/25 19:32
+ * @createDate:   2019/12/25 17:42
  * @version:      1.0
 */
-@Component
 @ConfigurationProperties(prefix = "spring.datasource")
 public class DruidProperties {
 

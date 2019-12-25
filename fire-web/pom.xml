@@ -48,6 +48,12 @@
             <version>${mybatis-spring-boot-starter.version}</version>
         </dependency>
 
+        <!--mapper-->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>${mapper-spring-boot-tarter.version}</version>
+        </dependency>
     </dependencies>
 
 
@@ -75,5 +81,16 @@
         </resources>
     </build>
 
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <spring.active>local</spring.active>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 
 </project>

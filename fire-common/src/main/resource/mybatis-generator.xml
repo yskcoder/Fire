@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
-    <!--数据库驱动包位置, 如果是java命令行运行就需要配置 -->
-    <!-- classPathEntry location="C:\java\mysql-connector-java-5.1.42.jar" /> -->
     <context id="MysqlTables" targetRuntime="MyBatis3Simple">
         <property name="javaFileEncoding" value="UTF-8" />
         <property name="javaFileEncoding" value="UTF-8" />
@@ -20,7 +18,7 @@
         <plugin type="tk.mybatis.mapper.generator.TemplateFilePlugin">
             <property name="targetProject"
                       value="E:/IdeaProject/fire/fire-dao/src/main/java" />
-            <property name="targetPackage" value="com.kn.fire.dao" />
+            <property name="targetPackage" value="cn.yskcoder.fire.dao" />
             <property name="mapperSuffix" value="Dao" />
             <property name="templatePath" value="generator/mapper.ftl" />
             <property name="fileName"
@@ -42,7 +40,7 @@
         </javaTypeResolver>
         <!-- ★★★生成实体类的包名和位置★★★要保证目录存在 -->
         <javaModelGenerator
-                targetPackage="com.kn.fire.model"
+                targetPackage="cn.yskcoder.fire.model"
                 targetProject="E:/IdeaProject/fire/fire-dao/src/main/java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />

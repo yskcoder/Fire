@@ -14,7 +14,7 @@ import java.util.List;
  * 自动生成Mybatis相关的代码和配置文件
  *
  * @author: yskcoder
- * @createDate: 2019/5/8 18:59
+ * @createDate: 2019/12/25 18:59
  * @version: 1.0
  */
 public class Generator {

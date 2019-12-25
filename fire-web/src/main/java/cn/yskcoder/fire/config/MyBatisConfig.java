@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * mybatisConfig配置类
  *
  * @author:       yskcoder
- * @createDate:   2019/12/25 16:20
+ * @createDate:    2019/12/25 17:41
  * @version:      1.0
 */
 @Configuration
