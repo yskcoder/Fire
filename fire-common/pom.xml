@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>fire</artifactId>
+        <groupId>cn.yskcoder.fire</groupId>
+        <version>v1.0</version>
+    </parent>
+
+    <!--模块信息-->
+    <packaging>jar</packaging>
+    <name>fire-common</name>
+    <artifactId>fire-common</artifactId>
+    <description>fire 通用工具类模块</description>
+
+    <!--模块依赖-->
+    <dependencies>
+
+    </dependencies>
+
+
+</project>
