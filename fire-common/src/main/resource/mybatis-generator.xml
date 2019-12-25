@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!--数据库驱动包位置, 如果是java命令行运行就需要配置 -->
+    <!-- classPathEntry location="C:\java\mysql-connector-java-5.1.42.jar" /> -->
+    <context id="MysqlTables" targetRuntime="MyBatis3Simple">
+        <property name="javaFileEncoding" value="UTF-8" />
+        <property name="javaFileEncoding" value="UTF-8" />
+        <property name="useMapperCommentGenerator" value="false" />
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers"
+                      value="tk.mybatis.mapper.common.Mapper" />
+            <property name="caseSensitive" value="true" />
+            <property name="forceAnnotation" value="true" />
+            <property name="beginningDelimiter" value="`" />
+            <property name="endingDelimiter" value="`" />
+        </plugin>
+
+        <plugin type="tk.mybatis.mapper.generator.TemplateFilePlugin">
+            <property name="targetProject"
+                      value="E:/IdeaProject/fire/fire-dao/src/main/java" />
+            <property name="targetPackage" value="com.kn.fire.dao" />
+            <property name="mapperSuffix" value="Dao" />
+            <property name="templatePath" value="generator/mapper.ftl" />
+            <property name="fileName"
+                      value="${tableClass.shortClassName}${mapperSuffix}.java" />
+        </plugin>
+
+        <!--去除注释 -->
+        <commentGenerator>
+            <property name="suppressDate" value="true" />
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+        <!-- 数据库链接URL、用户名、密码 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/fire" userId="root"
+                        password="123456">
+        </jdbcConnection>
+        <javaTypeResolver>
+            <property name="useJSR310Types" value="true" />
+        </javaTypeResolver>
+        <!-- ★★★生成实体类的包名和位置★★★要保证目录存在 -->
+        <javaModelGenerator
+                targetPackage="com.kn.fire.model"
+                targetProject="E:/IdeaProject/fire/fire-dao/src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- ★★★生成的映射文件包名和位置★★★要保证目录存在 -->
+        <sqlMapGenerator targetPackage="mapper"
+                         targetProject="E:/IdeaProject/fire/fire-dao/src/main/resources">
+            <property name="enableSubPac kages" value="false" />
+        </sqlMapGenerator>
+
+        <!-- 要生成那些表(更改tableName就可以); %为通配符，可以生成全部表 -->
+        <!-- <table tableName="B%" enableCountByExample="false" -->
+        <table tableName="sys_user" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" />
+    </context>
+</generatorConfiguration>
