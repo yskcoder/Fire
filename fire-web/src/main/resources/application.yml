@@ -10,10 +10,7 @@ server:
 ###################  spring配置  #########################
 spring:
   profiles:
-    datasource:
-      url: jdbc:mysql://localhost:3306/fire?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&jdbcCompliantTruncation=false&serverTimezone=GMT%2B8
-      username: root
-      password: 123456
+    active: @spring.active@
     resources:
      static-locations: classpath:/webapp/
   mvc:
