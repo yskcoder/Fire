@@ -7,3 +7,19 @@
 server:
   port: 80
 
+###################  spring配置  #########################
+spring:
+  profiles:
+    active: @spring.active@
+    resources:
+     static-locations: classpath:/webapp/
+  mvc:
+    static-path-pattern: /static/**
+    view:
+      prefix: /WEB-INF/view/
+
+
+###################  tk.mybaties配置  #########################
+mybatis:
+    type-aliases-package: cn.yskcoder.fire.model
+    mapper-locations: classpath*:mapper/*.xml
