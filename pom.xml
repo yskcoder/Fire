@@ -41,8 +41,8 @@
         <!--<hutool.version>4.1.1</hutool.version>-->
 
         <!--<beetl.version>2.8.5</beetl.version>-->
-        <!--<ehcache.version>3.3.1</ehcache.version>-->
-        <!--<shiro.version>1.4.0</shiro.version>-->
+        <ehcache.version>3.3.1</ehcache.version>
+        <shiro.version>1.4.0</shiro.version>
         <!--<fastjson.version>1.2.47</fastjson.version>-->
         <!--<commons-pool2.version>2.6.1</commons-pool2.version>-->
         <!--<commons-lang3.version>3.7</commons-lang3.version>-->
