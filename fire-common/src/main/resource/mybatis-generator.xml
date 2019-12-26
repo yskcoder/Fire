@@ -54,7 +54,13 @@
 
         <!-- 要生成那些表(更改tableName就可以); %为通配符，可以生成全部表 -->
         <!-- <table tableName="B%" enableCountByExample="false" -->
-        <table tableName="sys_user" enableCountByExample="false"
+        <table tableName="sys_user_role" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" />
+        <table tableName="sys_org" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" />
+        <table tableName="sys_role_org" enableCountByExample="false"
                enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" />
     </context>

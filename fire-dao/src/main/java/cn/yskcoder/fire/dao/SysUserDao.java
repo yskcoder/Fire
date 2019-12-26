@@ -4,7 +4,7 @@ import cn.yskcoder.fire.model.SysUser;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
- * 用户表数据处理类
+ * 用户表
  *
  * @author:       yskcoder
  * @createDate:   2019/12/25 16:01
